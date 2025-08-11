@@ -1,5 +1,7 @@
 "use client"
 
+import Image from "next/image"
+
 export default function PixelArtAlbum() {
   // Sample journal entries data
   const journalEntries = [
@@ -171,7 +173,7 @@ export default function PixelArtAlbum() {
               <div className="grid grid-cols-2 gap-2 sm:gap-4 auto-rows-min mt-6 sm:mt-12 lg:mt-24 order-2 lg:order-2">
                 {entry.images.map((image, imgIndex) => (
                   <div key={imgIndex} className={`${image.className} overflow-hidden rounded-lg`}>
-                    <img
+                    <Image
                       src={image.src || "/placeholder.svg?transparent"}
                       alt={image.alt}
                       className="w-full h-full object-cover pixel-art"
@@ -199,31 +201,31 @@ export default function PixelArtAlbum() {
             {/* Pixel Art Images Grid */}
             <div className="flex flex-wrap justify-center items-end gap-4 sm:gap-6 lg:gap-8">
               <div className="w-16 h-16 sm:w-20 sm:h-20 lg:w-24 lg:h-24 bg-white/20 rounded-lg flex items-center justify-center pixel-art">
-                <img src="/images/images.jpeg" alt="Pixel star" className="w-full h-full object-contain" />
+                <Image src="/images/images.jpeg" alt="Pixel star" className="w-full h-full object-contain" />
               </div>
               <div className="w-20 h-20 sm:w-24 sm:h-24 lg:w-32 lg:h-32 bg-white/20 rounded-lg flex items-center justify-center pixel-art">
-                <img
+                <Image
                   src="/images/stitch.png"
                   alt="Pixel heart"
                   className="w-full h-full object-contain"
                 />
               </div>
               <div className="w-18 h-18 sm:w-22 sm:h-22 lg:w-28 lg:h-28 bg-white/20 rounded-lg flex items-center justify-center pixel-art">
-                <img
+                <Image
                   src="/images/heart.png"
                   alt="Pixel flower"
                   className="w-full h-full object-contain"
                 />
               </div>
               <div className="w-24 h-24 sm:w-28 sm:h-28 lg:w-36 lg:h-36 bg-white/20 rounded-lg flex items-center justify-center pixel-art">
-                <img
+                <Image
                   src="/images/image_bra.png"
                   alt="Pixel rainbow"
                   className="w-full h-full object-contain"
                 />
               </div>
               <div className="w-16 h-16 sm:w-20 sm:h-20 lg:w-24 lg:h-24 bg-white/20 rounded-lg flex items-center justify-center pixel-art">
-                <img
+                <Image
                   src="/images/images.png"
                   alt="Pixel butterfly"
                   className="w-full h-full object-contain"
