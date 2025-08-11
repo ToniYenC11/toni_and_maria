@@ -143,7 +143,7 @@ export default function PixelArtAlbum() {
                 always put the care and love for each other despite the separation.
               </p>
               <p>
-                Let's take a moment to greet ourselves our very first monthsary together; in honor of my love for my
+                Let us take a moment to greet ourselves our very first monthsary together. In honor of my love for my
                 pretty little baby, I have made this simple diary website filled with our memories from the day we first
                 met, until the days regardless of how we felt were instrumental to our relationship.
               </p>
