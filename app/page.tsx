@@ -129,6 +129,23 @@ export default function PixelArtAlbum() {
         { src: "/images/20250809_202605.jpg", alt: "Pixel couple", className: "col-span-1" },
       ],
     },
+    {
+      date: "August 16, 2025",
+      title: `The Ways of the Stone Hashira`,
+      content:
+        `I remember a while ago, maybe a few weeks ago, we started watching "Kimetsu No Yaiba" so that I can watch the movie with you in the theaters.
+        Just today, we finally finished the last season and in the ways of the Stone Hashira, enduring hardships is part of growing together and eventually
+        being with each other on the same page. After that movie, I felt comfortable being vulnerable with you, talking about why I'm here and how my supposedly
+        "kuripot" self came to be. It's nice to finally have someone who understands me for who I am and will never judge me for the choices me and my family made.
+        Don't worry baby, I will get us to a life of peace and serenity someday. Today, is the day to work hard for it.`,
+      images: [
+        
+        { src: "/images/08_16_2025_1.jpeg", alt: "Pixel couple", className: "col-span-1" },
+        { src: "/images/08_16_2025_2.jpeg", alt: "Pixel couple", className: "col-span-1" },
+        { src: "/images/08_16_2025_3.jpeg", alt: "Pixel couple", className: "col-span-1" },
+        { src: "/images/08_16_2025_4.jpeg", alt: "Pixel couple", className: "col-span-1" },
+      ],
+    },
   ]
 
   return (
@@ -176,6 +193,8 @@ export default function PixelArtAlbum() {
                     <Image
                       src={image.src || "/placeholder.svg?transparent"}
                       alt={image.alt}
+                      width={500}
+                      height={500}
                       className="w-full h-full object-cover pixel-art"
                     />
                   </div>
@@ -201,18 +220,23 @@ export default function PixelArtAlbum() {
             {/* Pixel Art Images Grid */}
             <div className="flex flex-wrap justify-center items-end gap-4 sm:gap-6 lg:gap-8">
               <div className="w-16 h-16 sm:w-20 sm:h-20 lg:w-24 lg:h-24 bg-white/20 rounded-lg flex items-center justify-center pixel-art">
-                <Image src="/images/images.jpeg" alt="Pixel star" className="w-full h-full object-contain" />
+                <Image src="/images/images.jpeg" alt="Pixel star" className="w-full h-full object-contain" width={500}
+                      height={500} />
               </div>
               <div className="w-20 h-20 sm:w-24 sm:h-24 lg:w-32 lg:h-32 bg-white/20 rounded-lg flex items-center justify-center pixel-art">
                 <Image
                   src="/images/stitch.png"
                   alt="Pixel heart"
+                  width={500}
+                      height={500}
                   className="w-full h-full object-contain"
                 />
               </div>
               <div className="w-18 h-18 sm:w-22 sm:h-22 lg:w-28 lg:h-28 bg-white/20 rounded-lg flex items-center justify-center pixel-art">
                 <Image
                   src="/images/heart.png"
+                  width={500}
+                      height={500}
                   alt="Pixel flower"
                   className="w-full h-full object-contain"
                 />
@@ -221,12 +245,16 @@ export default function PixelArtAlbum() {
                 <Image
                   src="/images/image_bra.png"
                   alt="Pixel rainbow"
+                  width={500}
+                      height={500}
                   className="w-full h-full object-contain"
                 />
               </div>
               <div className="w-16 h-16 sm:w-20 sm:h-20 lg:w-24 lg:h-24 bg-white/20 rounded-lg flex items-center justify-center pixel-art">
                 <Image
                   src="/images/images.png"
+                  width={500}
+                      height={500}
                   alt="Pixel butterfly"
                   className="w-full h-full object-contain"
                 />
